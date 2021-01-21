@@ -1,0 +1,44 @@
+// flexbox //
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// backgrounds //
+@mixin backgroundColor($background, $borderTop) {
+
+    @if $background != white{
+        background-color: darken($background, 5%);
+    } 
+
+    @if $borderTop != white{
+        border-top: 3px solid darken($borderTop, 13%);
+    }
+}
+
+// forms //
+@mixin inputStyle($input) {
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+
+    @if $input != white{
+        background-color: darken($input, 5%);
+
+        &::placeholder{
+            color: rgb(73, 73, 73);
+            padding-left: 11px;
+        }
+    }
+}
+
+// buttons //
+@mixin btnStyle{
+    background: linear-gradient(175deg, $secondary-color, $primary-color);
+    color: white;
+    border: none;
+    border-radius: 35px;
+}

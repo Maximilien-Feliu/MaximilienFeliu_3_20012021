@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">        
         <title>Ohmyfood</title>
-        <link rel="stylesheet" href="styles/styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/Sass/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/3ec31e340a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
             <header>
 
-                <h1>ohmyfood</h1>
+                <h1 class="font_header">ohmyfood</h1>
 
             </header>
 
@@ -29,7 +31,7 @@
                     </form>
                 </div>
 
-                <div class="location_info">
+                <div class="location__info">
 
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
@@ -48,7 +50,7 @@
                     <li>
                         <div class="icon_text shadow">
                             <i class="fas fa-mobile-alt"></i>
-                            <p>Choisissez un restaurant</p> 
+                            <p class="bold">Choisissez un restaurant</p> 
                         </div>
                     </li>
                     <li>
@@ -69,7 +71,7 @@
 
             <section class="section_three">
 
-                <h2>Restaurant</h2>
+                <h2>Restaurants</h2>
 
                 <div class="restaurant_container">
 
@@ -86,7 +88,7 @@
                                 </div>
 
                                 <div class="card_heart">
-                                    <i class="far fa-heart"></i>
+                                    <button type="button" class="btn__card"><i class="far fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +107,7 @@
                                 </div>
 
                                 <div class="card_heart">
-                                    <i class="far fa-heart"></i>
+                                    <button type="button" class="btn__card"><i class="far fa-heart"></i></button>
                                 </div>
                             </div>
                             
@@ -124,7 +126,7 @@
                                 </div>
 
                                 <div class="card_heart">
-                                    <i class="far fa-heart"></i>
+                                    <button type="button" class="btn__card"><i class="far fa-heart"></i></button>
                                 </div>
                             </div>
 
@@ -143,7 +145,7 @@
                                 </div>
 
                                 <div class="card_heart">
-                                    <i class="far fa-heart"></i>
+                                    <button type="button" class="btn__card"><i class="far fa-heart"></i></button>
                                 </div>
                             </div>
 
