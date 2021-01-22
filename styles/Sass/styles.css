@@ -319,5 +319,42 @@ input::placeholder {
   background-color: white;
   border: none;
   font-size: 1.5em;
+  color: grey;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+
+footer h2 {
+  padding-top: 2rem;
+  margin-top: 0px;
+}
+
+footer ul {
+  padding-left: 0px;
+  margin-left: 1.5rem;
+  margin-top: 1em;
+}
+
+footer ul li {
+  margin-bottom: .5em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a .fa-utensils {
+  padding-right: 15px;
+}
+
+footer a .fa-hands-helping {
+  padding-right: 8px;
 }
 /*# sourceMappingURL=styles.css.map */
