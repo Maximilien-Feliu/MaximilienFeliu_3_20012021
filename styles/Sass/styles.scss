@@ -10,7 +10,8 @@ body{
 }
 
 h2{
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 2em;
     font-weight: 900;
 }
 
@@ -29,7 +30,7 @@ header{
     height: 65px;
 }
 
-/*first section*/
+/*section_one*/
 #section_one{
     background-color: $background-color;
     width: 100%;
@@ -68,6 +69,43 @@ input{
     height: 15%;
 }
 
+/*section_two*/
+#fonctionnement{
+    padding: 0;
+    @include cardContainer;
+    
+    li{
+        @include listNumbersCircle;
+        @include flexCenter(row);
+    }
+}
+
+.icon_text{
+    @include rectangularCard;
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+
+    i{
+        color: grey;
+    }
+
+    p{
+        font-weight: bold;
+    }
+
+    i, p{
+        margin-left: 10%;
+    }
+}
+
+.primary-color{
+    background-color: #9356dc16;
+
+    i{
+        color: $primary-color;
+    }
+}
 
 
 
