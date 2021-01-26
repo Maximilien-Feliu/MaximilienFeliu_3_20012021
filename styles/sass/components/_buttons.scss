@@ -1,0 +1,23 @@
+@mixin btnStyle{
+    width: 70%;
+    height: 15%;
+    border: none;
+    border-radius: 35px;
+    z-index: 1;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn{
+    @include btnStyle;
+    background: linear-gradient(175deg, $secondary-color, $primary-color);
+    color: $white;
+    margin-top: 1.5em;
+    
+    &:hover{
+        opacity: 85%;
+        box-shadow: $shadow-hover;
+    }
+}

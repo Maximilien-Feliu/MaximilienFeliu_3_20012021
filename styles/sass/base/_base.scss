@@ -1,0 +1,22 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: $normal-size;
+    font-weight: $normal-weight;
+    margin: 0;
+    height: 100%;
+}
+
+h2{
+    margin-left: 1.5rem;
+    margin-top: 2em;
+    font-weight: $max-bold;
+}
+
+.font_header{
+    font-family: 'Shrikhand', cursive, sans-serif;
+    font-weight: lighter;
+}
+
+.shadow{
+    box-shadow: $shadow;
+}

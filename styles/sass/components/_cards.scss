@@ -1,0 +1,30 @@
+@mixin cardContainer {
+    width: 85%;
+    margin: auto;
+}
+
+@mixin rectangularCard{
+    width: 100%;
+    height: 4em;
+    border-radius: 20px;
+}
+
+@mixin squareCard{
+    background-color: $white;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+@mixin squareCardImg{
+    img{
+        width: 100%;
+        height: 70%;
+        margin-bottom: 0px;
+        padding: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,96 @@
+#section_one, #section_three{
+    width: 100%;
+    background-color: $background-color;
+}
+
+// section_two //
+
+.icon_text{
+    @include rectangularCard;
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+
+    i{
+        color: grey;
+    }
+
+    p{
+        font-weight: bold;
+    }
+
+    i, p{
+        margin-left: 10%;
+    }
+}
+
+.primary-color{
+    background-color: #9356dc16;
+
+    i{
+        color: $primary-color;
+    }
+}
+
+// section_three //
+
+#section_three{
+    padding-bottom: 4em;
+
+    h2{
+        padding-top: 2.5em;
+    }
+}
+
+.restaurants_container{
+    @include cardContainer;
+}
+
+.btn_card_relative{
+    @include squareCard;
+    position: relative;
+}
+
+.card{
+
+    &_restaurant{
+        @include squareCard;
+        @include squareCardImg;
+        position: relative;
+    }
+
+    &_new{
+        @include stickerNew($tertiary-color);
+        @include flexCenter(row);
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    &_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: .7em;
+
+        h3{
+            margin-bottom: 0px;
+            margin-top: .5em;
+        }
+
+        p{
+            margin-top: 2px;
+        }
+    }
+
+    &_heart{
+        background-color: $white;
+        border: none;
+        font-size: 1.5em;
+        color: grey;
+        z-index: 1;
+        position: absolute;
+        right: .5em;
+        bottom: 1em;
+    }
+}

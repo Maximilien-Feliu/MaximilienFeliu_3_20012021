@@ -1,0 +1,42 @@
+.location{
+    @include flexCenter(row);
+    @include backgroundColor($background-color, $background-color);
+    height: 3rem;
+
+    form{
+        margin-left: 1.3em;
+    }
+
+    &__info{
+        @include flexCenter(column);
+        width: 74%;
+        height: 300px;
+        text-align: center;
+        margin: auto;
+
+        h2{
+            margin: 0;
+        }
+    }
+}
+
+// input //
+@mixin inputStyle($input) {
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+
+    @if $input != $white{
+        background-color: darken($input, 5%);
+
+        &::placeholder{
+            color: rgb(73, 73, 73);
+            padding-left: 11px;
+        }
+    }
+}
+
+input{
+    @include inputStyle($background-color);
+}
