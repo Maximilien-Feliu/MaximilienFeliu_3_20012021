@@ -8,16 +8,9 @@
 
 button{
     cursor: pointer;
-}
-
-.btn{
-    @include btnStyle;
-    background: linear-gradient(175deg, $secondary-color, $primary-color);
-    color: $white;
-    margin-top: 1.5em;
     
-    &:hover{
-        opacity: 85%;
-        box-shadow: $shadow-hover;
+    &:focus{
+        outline: none;
     }
 }
+
