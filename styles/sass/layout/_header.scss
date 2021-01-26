@@ -2,3 +2,9 @@ header{
     @include flexCenter(row);
     height: 65px;
 }
+
+// pages menus //
+.header_arrow{
+    position: absolute;
+    left: 2.5em;
+}

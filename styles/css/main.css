@@ -350,6 +350,11 @@ header {
   height: 65px;
 }
 
+.header_arrow {
+  position: absolute;
+  left: 2.5em;
+}
+
 footer {
   width: 100%;
   height: 250px;
