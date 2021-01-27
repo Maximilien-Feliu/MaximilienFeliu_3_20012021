@@ -1,9 +1,22 @@
 // flexbox //
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 @mixin flexCenter($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: $direction;
+}
+
+@mixin flexColumn($justify) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
 }
 
 @mixin flexSpace($align, $space) {

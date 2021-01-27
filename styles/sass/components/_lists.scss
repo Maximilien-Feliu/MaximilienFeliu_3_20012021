@@ -1,3 +1,7 @@
+li{
+    list-style-type: none;
+}
+
 // ordered lists //
 @mixin listNumbersCircle{
     list-style-type: none;
@@ -18,17 +22,98 @@
     }
 }
 
-li{
-    list-style-type: none;
-}
+// section_two acceuil //
 
 #fonctionnement{
     padding: 0;
     
     li{
-        width: 85%;
+        width: $almost-full; 
         margin-left: 1em;
         @include listNumbersCircle;
-        @include flexCenter(row);
+        @include flexCenter(row);       
+    }
+}
+
+.icon_text{
+    @include rectangularCard(20px);
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+
+    i{
+        color: grey;
+    }
+
+    p{
+        font-weight: bold;
+    }
+
+    i, p{
+        margin-left: 10%;
+    }
+}
+
+.primary-color{
+    background-color: #9356dc16;
+
+    i{
+        color: $primary-color;
+    }
+}
+
+
+// list menus cards //
+
+.list_plates{
+    padding: 0;
+
+    li{
+        margin: auto;
+        width: 90%;
+    }
+
+    .plate_info{
+        @include rectangularCard(13px);
+        background-color: $white;
+        margin-bottom: 1em;
+        @include flexColumn(center);
+
+        h3{
+            margin-top: 17px;
+            margin-bottom: -.7em;
+            margin-left: .4em;
+        }
+
+        p{
+            margin-left: .5em;
+        }
+
+        &_price{
+            @include flex(row, space-between, baseline);
+            padding: 0;
+            margin-top: 0px;
+
+            p{
+                margin-right: .7em;
+            }
+
+            &_checked{
+                @include flexBaseline;
+            }
+        }
+
+        &_checked{
+            width: 50px;
+            height: 4em;
+            color: $white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            @include flexCenter(row);
+            position: relative;
+            bottom: 1.3em;
+            background-color: $tertiary-color;
+            display: none;
+        }
     }
 }

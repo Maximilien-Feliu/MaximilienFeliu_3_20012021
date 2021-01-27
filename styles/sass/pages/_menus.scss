@@ -7,7 +7,7 @@
 .page_menu{
     background-color: $background-color;
     margin-top: -3.2em;
-    padding: 0;
+    padding-bottom: 5rem;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
@@ -29,4 +29,16 @@
         right: 1.7em;
         bottom: 9px;
     }
+}
+
+.font_lighter{
+    width: 2.6em;
+    height: 1.5em;
+    border-bottom: 3px solid $tertiary-color;
+}
+
+.btn_order_container{
+    width: 100%;
+    @include flexCenter(row);
+    margin-top: 2em;
 }

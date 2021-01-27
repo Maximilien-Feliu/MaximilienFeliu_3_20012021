@@ -70,20 +70,6 @@
       }
 }
 
-// main buttons // 
-.btn{
-  @include btnStyle;
-  background: linear-gradient(175deg, $secondary-color, $primary-color);
-  color: $white;
-  margin-top: 1.5em;
-  transition: all 250ms ease;
-  
-  &:hover{
-      opacity: 85%;
-      box-shadow: $shadow-hover;
-  }
-}
-
 // hearts //
 .card_heart{
 
