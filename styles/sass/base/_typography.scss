@@ -1,7 +1,14 @@
 // font-size //
 $normal-size: 16px;
+$main-title: 30px; 
 
 // font-weight //
 $normal-weight: 300;
 $max-bold: 900;
 $max-thin: 100;
+
+.font_header{
+    font-family: 'Shrikhand', cursive, sans-serif;
+    font-weight: lighter;
+    font-size: $main-title;
+}
