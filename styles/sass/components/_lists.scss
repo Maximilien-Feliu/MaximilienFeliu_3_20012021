@@ -78,42 +78,43 @@ li{
         background-color: $white;
         margin-bottom: 1em;
         @include flexColumn(center);
+        overflow: hidden;
 
         h3{
             margin-top: 17px;
-            margin-bottom: -.7em;
+            margin-bottom: -1.2em;
             margin-left: .4em;
         }
 
         p{
             margin-left: .5em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         &_price{
             @include flex(row, space-between, baseline);
-            padding: 0;
-            margin-top: 0px;
-
-            p{
-                margin-right: .7em;
-            }
 
             &_checked{
                 @include flexBaseline;
+
+                p{
+                    margin-right: .9em;
+                }
             }
         }
 
         &_checked{
             width: 50px;
-            height: 4em;
+            height: 3.5em;
+            font-size: 1.2em;
             color: $white;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
             @include flexCenter(row);
             position: relative;
-            bottom: 1.3em;
+            bottom: 0.4em;
             background-color: $tertiary-color;
-            display: none;
+            margin-right: -2.7em;
         }
     }
 }

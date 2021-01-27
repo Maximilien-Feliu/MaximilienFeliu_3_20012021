@@ -89,3 +89,55 @@
       transition: transform 700ms ease-out;
     }
 }
+
+// progressive menus appearance //
+@for $i from 1 through 9{
+  .plate-#{$i} {
+      opacity: 0;
+      animation: plates-appear 300ms ease-in-out both;
+      animation-delay: ($i * 200ms);
+    }
+  }
+
+@keyframes plates-appear{
+    0%{
+      opacity: 0; 
+      transform: translateY(20%);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+// checked plate //
+li a:focus{
+  .plate_info_checked{
+    animation: checked 300ms ease-out both;
+
+    .fa-check-circle{
+      animation: checked-circle 300ms ease-in-out;
+    }
+  }
+}
+
+@keyframes checked{
+  0%{
+    margin-right: -2.7em;
+  }
+
+  100%{
+    margin-right: 0;
+  }
+}
+
+@keyframes checked-circle{
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
