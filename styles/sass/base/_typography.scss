@@ -7,15 +7,22 @@ $normal-weight: 300;
 $max-bold: 900;
 $max-thin: 100;
 
-.font_header{
+.font{
+    
+    &_header{
     font-family: 'Shrikhand', cursive, sans-serif;
     font-weight: lighter;
     font-size: $main-title;
-}
+    }
 
-.font_lighter{
-    font-size: $normal-size;
-    font-weight: $normal-weight;
+    &_lighter{
+        font-size: $normal-size;
+        font-weight: $normal-weight;
+    }
+
+    &_footer_title{
+        font-size: 20px;
+    }
 }
 
 .bold{
