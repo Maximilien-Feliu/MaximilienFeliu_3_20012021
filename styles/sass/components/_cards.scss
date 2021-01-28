@@ -59,15 +59,24 @@
         }
     }
 
+    &_heart_container{
+        position: absolute;
+        @include flexCenter(column);
+        right: 15px;
+        bottom: 6px;
+        top: 13em;
+        z-index: 1;
+    }
+
     &_heart{
         background-color: $white;
         border: none;
         font-size: 1.5em;
-        color: grey;
-        z-index: 1;
-        position: absolute;
-        right: .5em;
-        bottom: 1em;
+        color: grey;       
+    }
+
+    &_heart_menu{
+        background-color: $background-color;
     }
 }
 

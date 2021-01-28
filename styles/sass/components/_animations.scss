@@ -1,14 +1,14 @@
 // spinner //
 .page_accueil{
-    animation: lds-page 3s;
+    animation: lds-page 3s; 
 
     @keyframes lds-page{
         0% {
-            opacity: 0;
+            transform: scale(0);
         }
 
         100% {
-            opacity: 0;
+            transform: scale(0);
         }
     }
 }
@@ -80,13 +80,16 @@
     &--fulfill{
       transform-origin: bottom;
       transform: scale(0);
-      font-size: 1.4em;
+      font-size: 1.6em;
       z-index: 2;
-      position: absolute;
-      right: .8em;
-      bottom: 1.3em;
-      color: $primary-color;
-      transition: transform 700ms ease-out;
+      position: relative;
+      bottom: 27px;
+      background: linear-gradient(180deg, $primary-color, $secondary-color);
+      color: transparent;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+           background-clip: text;
+      transition: all 700ms ease-out;
     }
 }
 
