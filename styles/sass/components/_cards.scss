@@ -21,12 +21,6 @@
         margin-top: 0;
         margin-bottom: 4em;
     }
-
-    @include respond-to(smallDesktop){
-        width: 40%;
-        margin-top: 0;
-        margin-bottom: 4em;
-    }
 }
 
 // restaurants //
@@ -34,12 +28,6 @@
     @include cardContainer;
 
     @include respond-to(handhelds){
-        width: 90%;
-        @include flex(row, space-around, center);
-        flex-wrap: wrap;
-    }
-
-    @include respond-to(smallDesktop){
         width: 90%;
         @include flex(row, space-around, center);
         flex-wrap: wrap;
@@ -59,10 +47,6 @@
         position: relative;
 
         @include respond-to(handhelds){
-            width: 100%;
-        }
-    
-        @include respond-to(smallDesktop){
             width: 100%;
         }
     }

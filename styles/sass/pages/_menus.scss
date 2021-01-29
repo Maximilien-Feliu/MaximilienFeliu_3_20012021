@@ -11,6 +11,19 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
+
+    &_sections{
+        @include respond-to(smallDesktop){
+            @include flex(row, space-between, baseline);
+            margin-top: 3em;
+        }
+    }
+
+    section{
+        @include respond-to(smallDesktop){
+            width: 30%;
+        }
+    }
 }
 
 .title_like{
@@ -36,4 +49,9 @@
     width: 100%;
     @include flexCenter(row);
     margin-top: 2em;
+
+    @include respond-to(smallDesktop){
+        margin-top: 2.5em;
+        margin-bottom: 2em;
+    }
 }

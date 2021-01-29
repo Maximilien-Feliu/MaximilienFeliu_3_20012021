@@ -13,10 +13,6 @@
     @include respond-to(handhelds){
         @include flexCenter(column);
     }
-
-    @include respond-to(smallDesktop){
-        @include flexCenter(column);
-    }
 }
 
 #section_three{
@@ -26,21 +22,15 @@
         padding-top: 2.5em;
 
         @include respond-to(handhelds){
-            padding-top: .5em;
-            margin-bottom: 2em;
-        }
-
-        @include respond-to(smallDesktop){
-            padding-top: .5em;
             margin-bottom: 2em;
             margin-left: 8%;
         }
-    }
-    @include respond-to(handhelds){
-        @include flexCenter(column);
+        @include respond-to(smallDesktop){
+            padding-top: .5em;
+        }
     }
 
-    @include respond-to(smallDesktop){
+    @include respond-to(handhelds){
         margin-top: 3em;
     }
 }

@@ -1,17 +1,18 @@
 // spinner //
-/*.page_accueil{
+.page_accueil{
     animation: lds-page 3s; 
 
     @keyframes lds-page{
         0% {
             transform: scale(0);
+            height: 0;
         }
 
         100% {
             transform: scale(0);
+            height: 0;
         }
     }
-
 }
 
 .loading-spinner{
@@ -24,6 +25,11 @@
         transform: scale(0);
         animation: lds-container 2.8s;
         animation-delay: 200ms;
+
+        @include respond-to(smallDesktop){
+          width: 120%;
+          left: -20%;
+        }
 
         &:hover{
             cursor: progress;
@@ -40,6 +46,10 @@
         border-radius: 50%;
         animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
         border-color: transparent $secondary-color transparent $primary-color;
+
+        @include respond-to(smallDesktop){
+          left: 57%;
+        }
       }
         & div:nth-child(1) {
         animation-delay: -0.45s;
@@ -69,7 +79,7 @@
           transform: rotate(360deg);
         }
       }
-}*/
+}
 
 // hearts //
 .card_heart{

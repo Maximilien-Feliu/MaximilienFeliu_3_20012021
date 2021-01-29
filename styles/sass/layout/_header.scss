@@ -2,8 +2,11 @@ header{
     @include flexCenter(row);
     height: 65px;
 
+    @include respond-to(handhelds){
+        height: 5em;
+    }
+
     @include respond-to(smallDesktop){
-        @include flex(row, flex-start, center);
         height: 7em;
     }
 }
@@ -14,7 +17,6 @@ header{
     left: 2.5em;
 
     @include respond-to(smallDesktop){
-        position: inherit;
-        margin-right: 2em;
-    }
+        left: 5em;
+    }    
 }
