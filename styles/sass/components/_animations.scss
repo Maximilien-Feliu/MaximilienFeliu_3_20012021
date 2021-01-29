@@ -104,7 +104,7 @@
 }
 
 // progressive menus appearance //
-@for $i from 1 through 9{
+@for $i from 1 through 10{
   .plate-#{$i} {
       opacity: 0;
       animation: plates-appear 300ms ease-in-out both;

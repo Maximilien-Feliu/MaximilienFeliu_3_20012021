@@ -771,6 +771,14 @@ li {
           animation-delay: 1800ms;
 }
 
+.plate-10 {
+  opacity: 0;
+  -webkit-animation: plates-appear 300ms ease-in-out both;
+          animation: plates-appear 300ms ease-in-out both;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
 @-webkit-keyframes plates-appear {
   0% {
     opacity: 0;
