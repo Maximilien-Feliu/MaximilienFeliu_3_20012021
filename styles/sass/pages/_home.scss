@@ -3,11 +3,45 @@
     background-color: $background-color;
 }
 
+#section_one, #section_two{
+    @include respond-to(smallDesktop){
+        width: 50%;
+    }
+}
+
+#section_two{
+    @include respond-to(handhelds){
+        @include flexCenter(column);
+    }
+
+    @include respond-to(smallDesktop){
+        @include flexCenter(column);
+    }
+}
+
 #section_three{
     padding-bottom: 4em;
 
     h2{
         padding-top: 2.5em;
+
+        @include respond-to(handhelds){
+            padding-top: .5em;
+            margin-bottom: 2em;
+        }
+
+        @include respond-to(smallDesktop){
+            padding-top: .5em;
+            margin-bottom: 2em;
+            margin-left: 8%;
+        }
+    }
+    @include respond-to(handhelds){
+        @include flexCenter(column);
+    }
+
+    @include respond-to(smallDesktop){
+        margin-top: 3em;
     }
 }
 

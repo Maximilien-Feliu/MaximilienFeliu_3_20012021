@@ -33,6 +33,16 @@ li{
         @include listNumbersCircle;
         @include flexCenter(row);       
     }
+
+    @include respond-to(handhelds){
+        width: 100%;
+        @include flexCenter(column);
+    }
+
+    @include respond-to(smallDesktop){
+        width: 100%;
+        @include flexCenter(column);
+    }
 }
 
 .icon_text{
@@ -43,6 +53,14 @@ li{
 
     i{
         color: grey;
+
+        @include respond-to(handhelds){
+            padding-left: 25%;
+        }
+    
+        @include respond-to(smallDesktop){
+            padding-left: 25%;
+        }
     }
 
     p{
@@ -51,6 +69,14 @@ li{
 
     i, p{
         margin-left: 10%;
+        
+        @include respond-to(handhelds){
+            margin-left: 4%;
+        }
+
+        @include respond-to(smallDesktop){
+            margin-left: 4%;
+        }
     }
 }
 
@@ -64,7 +90,6 @@ li{
 
 
 // list menus cards //
-
 .list_plates{
     padding: 0;
 

@@ -4,6 +4,11 @@ body{
     font-weight: $normal-weight;
     margin: 0;
     height: 100%;
+
+    @include respond-to(smallDesktop){
+        width: 90%;
+        margin: auto;
+    }
 }
 
 h2{
@@ -14,4 +19,11 @@ h2{
 
 .shadow{
     box-shadow: $shadow;
+}
+
+.page_sections{
+    @include respond-to(smallDesktop){
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

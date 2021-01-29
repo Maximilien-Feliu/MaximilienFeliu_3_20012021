@@ -15,11 +15,35 @@
     height: 250px;
     border-radius: 10px;
     margin-top: 2em;
+
+    @include respond-to(handhelds){
+        width: 40%;
+        margin-top: 0;
+        margin-bottom: 4em;
+    }
+
+    @include respond-to(smallDesktop){
+        width: 40%;
+        margin-top: 0;
+        margin-bottom: 4em;
+    }
 }
 
 // restaurants //
 .restaurants_container{
     @include cardContainer;
+
+    @include respond-to(handhelds){
+        width: 90%;
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
+    }
+
+    @include respond-to(smallDesktop){
+        width: 90%;
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
+    }
 }
 
 .btn_card_relative{
@@ -33,6 +57,14 @@
         @include squareCard;
         @include squareCardImg;
         position: relative;
+
+        @include respond-to(handhelds){
+            width: 100%;
+        }
+    
+        @include respond-to(smallDesktop){
+            width: 100%;
+        }
     }
 
     &_new{

@@ -20,145 +20,146 @@
 
             </header>
 
-            <section id="section_one">
+            <div class="page_sections">
+                <section id="section_one">
 
-                <div class="location">
-                    <form action="post" id="form_location"> <!--Button en dehors du formulaire-->
-                    
-                        <label for="city">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </label>
+                    <div class="location">
+                        <form action="post" id="form_location"> <!--Button en dehors du formulaire-->
+                        
+                            <label for="city">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </label>
 
-                        <input type="text" name="city" id="city" placeholder="Paris, Belleville" maxlength="100" />
+                            <input type="text" name="city" id="city" placeholder="Paris, Belleville" maxlength="100" />
 
-                    </form>
-                </div>
+                        </form>
+                    </div>
 
-                <div class="location__info">
+                    <div class="location__info">
 
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                        <h2>Réservez le menu qui vous convient</h2>
+                        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-                    <button type="button" form="form_location" class="btn shadow">Explorer nos restaurants</button>
+                        <button type="button" form="form_location" class="btn shadow">Explorer nos restaurants</button>
 
-                </div>
+                    </div>
 
-            </section>
+                </section>
 
-            <section id="section_two">
+                <section id="section_two">
 
-                <h2>Fonctionnement</h2>
+                    <h2>Fonctionnement</h2>
 
-                <ol id="fonctionnement">
-                    <li>
-                        <div class="icon_text shadow">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Choisissez un restaurant</p> 
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon_text shadow">
-                            <i class="fas fa-list-ul"></i>
-                            <p>Composez votre menu</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon_text shadow primary-color">
-                            <i class="fas fa-store"></i>
-                            <p>Dégustez au restaurant</p>
-                        </div>
-                    </li>
-                </ol>
+                    <ol id="fonctionnement">
+                        <li>
+                            <div class="icon_text shadow">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Choisissez un restaurant</p> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_text shadow">
+                                <i class="fas fa-list-ul"></i>
+                                <p>Composez votre menu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_text shadow primary-color">
+                                <i class="fas fa-store"></i>
+                                <p>Dégustez au restaurant</p>
+                            </div>
+                        </li>
+                    </ol>
 
-            </section>
+                </section>
 
-            <section id="section_three">
+                <section id="section_three">
 
-                <h2>Restaurants</h2>
+                    <h2>Restaurants</h2>
 
-                <div class="restaurants_container">
+                    <div class="restaurants_container">
 
-                    <div class="btn_card_relative">
-                        <a href="menus/LaPaletteDuGout.html">
-                            <div class="card_restaurant shadow">
+                        <div class="btn_card_relative">
+                            <a href="menus/LaPaletteDuGout.html">
+                                <div class="card_restaurant shadow">
+                                    
+                                    <img src="images/LaPaletteDuGout.jpg" alt="image d'un plat chez La palette du goût" />
+                                    <p class="card_new">Nouveau</p>
                                 
-                                <img src="images/LaPaletteDuGout.jpg" alt="image d'un plat chez La palette du goût" />
-                                <p class="card_new">Nouveau</p>
-                            
-                                <div class="card_info">
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontant</p>
+                                    <div class="card_info">
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontant</p>
+                                    </div>
+
                                 </div>
-
+                            </a>
+                            <div class="card_heart_container">
+                                <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
+                                <i class="fas fa-heart card_heart--fulfill"></i>
                             </div>
-                        </a>
-                        <div class="card_heart_container">
-                            <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
-                            <i class="fas fa-heart card_heart--fulfill"></i>
                         </div>
-                    </div>
 
-                    <div class="btn_card_relative">
-                        <a href="menus/LaNoteEnchantee.html">
-                            <div class="card_restaurant shadow">
+                        <div class="btn_card_relative">
+                            <a href="menus/LaNoteEnchantee.html">
+                                <div class="card_restaurant shadow">
 
-                                <img src="images/LaNoteEnchantee.jpg" alt="image d'un plat chez La note enchantée" />
-                                <p class="card_new">Nouveau</p>
-                            
-                                <div class="card_info">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
-                                </div>   
+                                    <img src="images/LaNoteEnchantee.jpg" alt="image d'un plat chez La note enchantée" />
+                                    <p class="card_new">Nouveau</p>
+                                
+                                    <div class="card_info">
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>
+                                    </div>   
 
-                            </div>
-                        </a>
-                        <div class="card_heart_container">
-                            <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
-                            <i class="fas fa-heart card_heart--fulfill"></i>
-                        </div>
-                    </div>
-
-                    <div class="btn_card_relative">
-                        <a href="menus/ALaFrancaise.html">
-                            <div class="card_restaurant shadow">
-
-                                <img src="images/ALaFrancaise.jpg" alt="image d'un plat chez A la fraçaise" />
-
-                                <div class="card_info">
-                                    <h3>&Agrave; la française</h3>
-                                    <p>Cité Rouge</p>
                                 </div>
-
+                            </a>
+                            <div class="card_heart_container">
+                                <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
+                                <i class="fas fa-heart card_heart--fulfill"></i>
                             </div>
-                        </a>
-                        <div class="card_heart_container">
-                            <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
-                            <i class="fas fa-heart card_heart--fulfill"></i>
                         </div>
-                    </div>
 
-                    <div class="btn_card_relative"> 
-                        <a href="menus/LeDeliceDesSens.html">
-                            <div class="card_restaurant shadow">
+                        <div class="btn_card_relative">
+                            <a href="menus/ALaFrancaise.html">
+                                <div class="card_restaurant shadow">
 
-                                <img src="images/LeDeliceDesSens.jpg" alt="image d'un plat chez Le délice des sens" />
-                            
-                                <div class="card_info">
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
+                                    <img src="images/ALaFrancaise.jpg" alt="image d'un plat chez A la fraçaise" />
+
+                                    <div class="card_info">
+                                        <h3>&Agrave; la française</h3>
+                                        <p>Cité Rouge</p>
+                                    </div>
+
                                 </div>
-
+                            </a>
+                            <div class="card_heart_container">
+                                <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
+                                <i class="fas fa-heart card_heart--fulfill"></i>
                             </div>
-                        </a>
-                        <div class="card_heart_container">
-                            <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
-                            <i class="fas fa-heart card_heart--fulfill"></i>
                         </div>
-                    </div>
-                </div>  
 
-            </section>
+                        <div class="btn_card_relative"> 
+                            <a href="menus/LeDeliceDesSens.html">
+                                <div class="card_restaurant shadow">
 
+                                    <img src="images/LeDeliceDesSens.jpg" alt="image d'un plat chez Le délice des sens" />
+                                
+                                    <div class="card_info">
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <div class="card_heart_container">
+                                <button type="button" class="card_heart"><i class="far fa-heart"></i></button>
+                                <i class="fas fa-heart card_heart--fulfill"></i>
+                            </div>
+                        </div>
+                    </div>  
+
+                </section>
+            </div>
             <footer>
 
                 <h2 class="font_header font_footer_title">ohmyfood</h2>
