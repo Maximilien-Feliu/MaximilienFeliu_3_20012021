@@ -8,12 +8,23 @@ footer {
     h2{
         padding-top: 2rem;
         margin-top: 0px;
+
+        @include respond-to(smallDesktop){
+            margin-left: 5.3em;
+        }
     }
 
     ul{
         padding-left: 0px;
         margin-left: 1.5rem;
         margin-top: 1em;
+
+        
+    @include respond-to(smallDesktop){
+        @include flex(row, space-around, center);
+        margin-top: 4.5em;
+        margin-left: 0;
+    }
 
         li{
             margin-bottom: .5em;

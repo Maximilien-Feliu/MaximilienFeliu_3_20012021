@@ -908,10 +908,35 @@ footer h2 {
   margin-top: 0px;
 }
 
+@media only screen and (min-width: 992px) {
+  footer h2 {
+    margin-left: 5.3em;
+  }
+}
+
 footer ul {
   padding-left: 0px;
   margin-left: 1.5rem;
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 4.5em;
+    margin-left: 0;
+  }
 }
 
 footer ul li {
