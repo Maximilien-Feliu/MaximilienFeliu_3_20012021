@@ -25,6 +25,8 @@
         transform: scale(0);
         animation: lds-container 2.8s;
         animation-delay: 200ms;
+        margin: 0;
+        z-index: 50;
 
         @include respond-to(smallDesktop){
           width: 120%;
@@ -137,11 +139,13 @@ li a:focus{
 
 @keyframes checked{
   0%{
-    margin-right: -2.7em;
+    width: 0px;
+    color: $white;
   }
 
   100%{
-    margin-right: 0;
+    width: 50px;
+    color: $white;
   }
 }
 
@@ -152,5 +156,26 @@ li a:focus{
 
   100%{
     transform: rotate(360deg);
+  }
+}
+
+li a:focus{
+  .plate_info_text_container{
+    h3{
+      animation: textoverflow 300ms both; 
+    }
+  }
+}
+
+@keyframes textoverflow{
+  0%{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  100%{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

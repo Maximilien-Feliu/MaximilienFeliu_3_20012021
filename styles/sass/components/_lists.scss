@@ -79,54 +79,58 @@ li{
 // list menus cards //
 .list_plates{
     padding: 0;
+    width: 90%;
+    margin: auto;
 
     li{
-        margin: auto;
-        width: 90%;
-    }
-
-    .plate_info{
-        @include rectangularCard(13px);
-        background-color: $white;
         margin-bottom: 1em;
-        @include flexColumn(center);
-        overflow: hidden;
+    }
+}
 
-        h3{
-            margin-top: 17px;
-            margin-bottom: -1.2em;
-            margin-left: .4em;
-        }
+.plate_info{
+        @include rectangularCard(13px);
+        margin-bottom: 1em;
+        display: flex;
+        background-color: $white;
 
-        p{
-            margin-left: .5em;
+        &_text_container{
+            @include flexColumn(center);
+            width: 100%;
             overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            white-space: normal;
+            
+            h3, .plate_info_text{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: .5em;
+            }
+
+            .plate_info_text{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        } 
+        
+        &_description{
+            display: flex;
+            align-items: flex-end;
         }
 
         &_price{
-            @include flex(row, space-between, baseline);
-
-            &_checked{
-                @include flexBaseline;
-
-                p{
-                    margin-right: .9em;
-                }
-            }
+            margin-right: 1em;
+            margin-bottom: .6em;
         }
 
         &_checked{
-            width: 50px;
-            height: 3.5em;
+            height: 3.4em;
             font-size: 1.2em;
-            color: $white;
+            color: transparent;
             @include flexCenter(row);
-            position: relative;
-            bottom: 0.4em;
             background-color: $tertiary-color;
-            margin-right: -2.7em;
+            width: 0px;
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
         }
-    }
 }
+

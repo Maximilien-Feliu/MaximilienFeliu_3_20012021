@@ -4,6 +4,7 @@ body{
     font-weight: $normal-weight;
     margin: 0;
     height: 100%;
+    animation: body 300ms forwards; 
 
     @include respond-to(smallDesktop){
         width: 90%;
