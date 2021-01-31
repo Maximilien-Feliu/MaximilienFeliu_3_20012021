@@ -13,6 +13,10 @@
   font-size: 20px;
 }
 
+.title_like .font_header {
+  font-size: 28px;
+}
+
 .bold {
   font-weight: 900;
 }
@@ -197,6 +201,24 @@ h2 {
   bottom: 6px;
   top: 13em;
   z-index: 1;
+}
+
+.card_heart_container_menu {
+  margin-top: 3.5em;
+  margin-right: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card_heart {
@@ -732,12 +754,9 @@ footer a .fa-hands-helping {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-}
-
-.title_like .card_heart_container {
-  top: 4em;
-  right: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .font_lighter {

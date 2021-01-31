@@ -31,12 +31,7 @@
     height: 75px;
     display: flex;
     align-items: center;
-    position: relative;
-
-    .card_heart_container{
-        top: 4em;
-        right: 2em;
-    }
+    justify-content: space-between;
 }
 
 .font_lighter{
